@@ -10,11 +10,11 @@ namespace VolvoNETII.DataAccess.Context
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
-        public DbSet<Employee> Employees { get; set; }
-        public DbSet<Job> Jobs { get; set; }
-        public DbSet<Department> Departments { get; set; }
-        public DbSet<Location> Locations { get; set; }
-        public DbSet<Country> Countries { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; }
+        public virtual DbSet<Job> Jobs { get; set; }
+        public virtual DbSet<Department> Departments { get; set; }
+        public virtual DbSet<Location> Locations { get; set; }
+        public virtual DbSet<Country> Countries { get; set; }
 
     }
 }

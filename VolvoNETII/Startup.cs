@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
@@ -11,7 +12,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using VolvoNETII.Core.DataAccessService;
 using VolvoNETII.DataAccess.Context;
+using VolvoNETII.DataAccess.Models;
+using VolvoNETII.DataAccess.Repositories;
 
 namespace VolvoNETII
 {
@@ -29,8 +33,10 @@ namespace VolvoNETII
         {
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddScoped<ISampleService1, SampleService1>();
+            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            services.AddScoped<IJobRepository, JobRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
