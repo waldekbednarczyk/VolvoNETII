@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VolvoNETII", "VolvoNETII\VolvoNETII.csproj", "{621C1D69-5B49-4AB8-AA9B-FA9A38BC52F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VolvoNETII.DataAccess", "VolvoNETII.DataAccess\VolvoNETII.DataAccess.csproj", "{1F504276-7F8D-4DB1-9B24-5CD667EB6F52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{621C1D69-5B49-4AB8-AA9B-FA9A38BC52F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{621C1D69-5B49-4AB8-AA9B-FA9A38BC52F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{621C1D69-5B49-4AB8-AA9B-FA9A38BC52F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F504276-7F8D-4DB1-9B24-5CD667EB6F52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F504276-7F8D-4DB1-9B24-5CD667EB6F52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F504276-7F8D-4DB1-9B24-5CD667EB6F52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F504276-7F8D-4DB1-9B24-5CD667EB6F52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
